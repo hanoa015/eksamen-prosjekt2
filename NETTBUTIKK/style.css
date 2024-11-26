@@ -650,3 +650,62 @@ details tbody td {
 details tbody tr:nth-child(odd) {
     background-color: #fafafa; 
 }
+
+details colgroup {
+    width: 10%; 
+}
+
+#lignende-produkter {
+    margin: 10px; 
+}
+
+#produkt-detaljer {
+    margin: 10px; 
+}
+
+#produkt-h2 {
+    margin: 10px;
+}
+
+.produkt-kort {
+    display: flex; 
+    gap: 20px; 
+    overflow-x: auto; 
+    padding: 10px; 
+    margin: 0 10px; 
+    scroll-snap-type: x mandatory; 
+}
+
+.produkt-kort article {
+    flex: 0 0 auto;
+    width: 250px; 
+    background: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 10px; 
+    text-align: center; 
+    scroll-snap-align: start; 
+}
+
+.produkt-kort img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.produkt-kort h3 {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    font-size: 16px; 
+    margin: 10px 0;
+}
+
+.produkt-kort .produkt-navn {
+    font-weight: bold; 
+}
+
+.produkt-kort .produkt-pris {
+    font-weight: bold;
+    color: #000000;
+}
