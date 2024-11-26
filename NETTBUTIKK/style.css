@@ -612,7 +612,6 @@ article.anmeldelse:first-of-type {
     background-color: #333; 
 }
 
-
 select#size {
     padding: 10px;
     margin-bottom: 20px; 
@@ -630,3 +629,24 @@ details table {
     table-layout: fixed; 
 }
 
+details thead th {
+    background-color: #f5f5f5; 
+    color: #333; 
+    font-weight: bold; 
+    border: 1px solid #ccc; 
+    padding: 6px; 
+    text-align: left; 
+    font-size: 14px; 
+}
+
+details tbody td {
+    border: 1px solid #ccc; 
+    padding: 4px 6px; 
+    text-align: center; 
+    font-size: 13px;
+    line-height: 1.2; 
+}
+
+details tbody tr:nth-child(odd) {
+    background-color: #fafafa; 
+}
