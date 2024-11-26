@@ -579,3 +579,54 @@ article.anmeldelse:first-of-type {
     line-height: 1.5;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+#produkt-informasjon h2, #produkt-informasjon a, #produkt-informasjon p {
+    text-align: left; 
+}
+
+#produkt-informasjon label, #produkt-informasjon select, #produkt-informasjon input[type="number"] {
+    display: block; 
+    width: 100%; 
+    margin: 5px 0; 
+}
+
+#produkt-informasjon button {
+    width: auto; 
+    margin-top: 10px; 
+    cursor: pointer; 
+}
+
+#produkt-informasjon p a[role="button"] {
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: #000; 
+    color: #fff;
+    text-decoration: none; 
+    font-weight: bold; 
+    text-align: center; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+}
+
+#produkt-informasjon p a[role="button"]:hover {
+    background-color: #333; 
+}
+
+
+select#size {
+    padding: 10px;
+    margin-bottom: 20px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    cursor: pointer; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    background-color: #fff; 
+}
+
+details table {
+    width: 100%;
+    border-collapse: collapse; 
+    table-layout: fixed; 
+}
+
