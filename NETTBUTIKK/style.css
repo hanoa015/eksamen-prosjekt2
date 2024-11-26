@@ -709,3 +709,51 @@ details colgroup {
     font-weight: bold;
     color: #000000;
 }
+
+.produkt-kort p {
+    font-size: 14px; 
+    margin: 5px 0; 
+    text-align: left;
+}
+
+.produkt-kort button {
+    background-color: #000; 
+    color: #fff; 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 14px; 
+    margin-top: 10px; 
+}
+
+.produkt-kort button:hover {
+    background-color: #000000; 
+}
+
+
+#footer-kontakt h2 {
+    font-size: 30px; 
+    font-weight: bold;
+    color: #000000; 
+
+}
+
+#footer-kontakt p {
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+
+.bold-text {
+    font-weight: bold;
+    color: #000;
+}
+
+section a {
+    text-decoration: none; 
+    color: #000; 
+}
+section a:hover{ /*SKAL FJERNES FOR MOBIL??*/
+    color: #4744e0;
+    text-decoration: underline;
+}
