@@ -949,3 +949,75 @@ button {
 .spacer {
     margin-top: 80px; 
 }
+
+#levering-section {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    color: #000000;
+    margin: 10px;
+}
+
+#levering-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.delivery-option {
+    margin-bottom: 20px; 
+    padding-bottom: 15px; 
+    border-bottom: 1px solid #ccc; 
+}
+
+.delivery-option:last-child {
+    border-bottom: none; 
+}
+
+.delivery-option label {
+    margin-bottom: 5px; 
+    font-size: 1rem;
+}
+
+.delivery-option .price {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.delivery-option .details {
+    font-size: 0.9rem;
+    color: #000000;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+
+.delivery-option i {
+    color: #000000;
+    margin-left: 5px;
+}
+
+#betaling {
+    margin: 10px; 
+    background-color: #f9f9f9;
+}
+
+#betaling h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px; 
+}
+
+#betaling form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: calc(100% - 20px); 
+}
+
+#betaling form label {
+    font-weight: bold;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px; 
+    margin-bottom: 8px; 
+    text-align: center; 
+    width: 100%; 
+}
