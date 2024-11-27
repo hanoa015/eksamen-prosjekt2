@@ -888,3 +888,64 @@ button {
     display: block;
     margin-bottom: 20px; 
 }
+
+#dine-opplysninger form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px; 
+    margin: 10px;
+
+}
+
+#dine-opplysninger form input {
+    display: block;
+    width: 100%; 
+    max-width: 400px; 
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 10px;
+
+}
+
+
+#dine-opplysninger form button#lagre-knapp {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #333; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; 
+    text-align: center;
+    margin-bottom: 10px; 
+}
+
+#dine-opplysninger form button#lagre-knapp:hover {
+    background-color: #555; 
+}
+
+#dine-opplysninger form button#avbryt-knapp {
+    background: none;
+    border: none;
+    color: #007bff; 
+    font-size: 1rem;
+    text-decoration: underline;
+    cursor: pointer;
+    display: block; 
+    margin: 0 auto; 
+    text-align: center;
+}
+
+#dine-opplysninger form button#avbryt-knapp:hover {
+    color: #0056b3; 
+    text-decoration: none; 
+}
+
+
+.spacer {
+    margin-top: 80px; 
+}
