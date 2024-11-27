@@ -766,3 +766,53 @@ section a:hover{ /*SKAL FJERNES FOR MOBIL??*/
     border-radius: 8px;
     margin: 10px;
 }
+
+.checkout-page h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.checkout-page section {
+    margin-bottom: 20px;
+}
+
+.checkout-page section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #000000;
+    margin: ;
+}
+
+.checkout-page section article img {
+    height: auto;
+    border-radius: 5px;
+}
+
+.checkout-page section article p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #000000;
+}
+
+.checkout-page section article p label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.checkout-page section article select,
+.checkout-page section article input[type="number"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: auto;
+}
+
+.checkout-page section article button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
