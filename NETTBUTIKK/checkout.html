@@ -208,15 +208,15 @@
         <section id="betaling">
             <h2>4. BETALING</h2>
             <form action="/fullfør-betaling" method="POST">
-                <label for="kortnummer">
+                <label for="kortnummer" class="form-label">
                     <b>BETAL MED KORT</b> <i class="fa-solid fa-credit-card"></i>
                 </label>
                 <input type="text" id="kortnummer" name="kortnummer" placeholder="352342****4435" required>
         
-                <label for="utløpdato">Utløpsdato</label>
+                <label for="utløpdato" class="form-label">Utløpsdato</label>
                 <input type="date" id="utløpdato" name="utløpdato" required>
         
-                <label for="cvc">CVC/CVV</label>
+                <label for="cvc" class="form-label">CVC/CVV</label>
                 <input type="text" id="cvc" name="cvc" placeholder="CVC/CVV" required>
         
                 <p>Å betale inkl. mva.</p>
@@ -230,14 +230,14 @@
                     uriktige eller ufullstendige opplysninger.
                 </p>
         
-                <label>
+                <label class="checkbox-label">
                     <input type="checkbox" name="godtar_vilkar" required> Ja takk! Send nyhetsbrevet til meg.
                 </label>
-                <label>
+                <label class="checkbox-label">
                     <input type="checkbox" name="nyhetsbrev"> Jeg ønsker å motta tekstmeldinger med tilbud.
                 </label>
             </form>
-        </section>        
+        </section>            
 
         <footer>
             <footer id="footer-kontakt">
