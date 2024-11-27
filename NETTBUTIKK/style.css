@@ -1021,3 +1021,47 @@ button {
     text-align: center; 
     width: 100%; 
 }
+
+#betaling form input[type="text"],
+#betaling form input[type="date"],
+#betaling form input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#betaling form input[type="checkbox"] {
+    width: auto; 
+    margin: 0; 
+}
+
+#betaling form p {
+    margin: 5px 0; 
+    font-size: 0.9em;
+    color: #666;
+}
+
+#betaling form h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#betaling form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+#betaling form button:hover {
+    background-color: #555;
+}
+
