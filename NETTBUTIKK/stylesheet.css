@@ -554,7 +554,7 @@ margin-bottom: 10px;
 }
 
 .anmeldelse img {
-width: 100px; 
+width: 200px; 
 height: auto; 
 border-radius: 50%; 
 margin: 0 auto 15px; 
@@ -1000,7 +1000,6 @@ margin-right: 10px;
 
 #dine-opplysninger {
 width: 100%;
-max-width: 600px; 
 margin: 0 auto; 
 font-family: Arial, sans-serif;
 }
@@ -1144,27 +1143,23 @@ margin-bottom: 20px;
 display: flex;
 flex-direction: column;
 align-items: flex-start;
-max-width: calc(100% - 20px); 
+width: 100%;
 }
 
 #betaling form label {
 font-weight: bold;
-align-items: center; 
 gap: 10px; 
 margin-bottom: 8px; 
-text-align: center; 
 width: 100%; 
 }
-
 
 #betaling form input[type="text"],
 #betaling form input[type="date"],
 #betaling form input[type="number"] {
 width: 100%;
-padding: 8px;
+padding: 15px;
 margin-bottom: 8px; 
 border: 1px solid #ccc;
-border-radius: 4px;
 }
 
 #betaling form input[type="checkbox"] {
@@ -1175,7 +1170,8 @@ margin: 0;
 #betaling form p {
 margin: 5px 0; 
 font-size: 0.9em;
-color: #666;
+color: #000000;
+text-align: center;
 }
 
 #betaling form h2 {
@@ -1184,9 +1180,9 @@ text-align: center;
 margin: 10px 0;
 }
 
-#betaling form button {
+#betaling button {
 width: 100%;
-padding: 12px;
+padding: 20px;
 background-color: #333;
 color: white;
 border: none;
@@ -1198,6 +1194,12 @@ margin-top: 10px;
 
 #betaling form button:hover {
 background-color: #555;
+}
+
+#betaling .checkbox-label {
+    text-align: center;
+    font-weight: normal;
+    margin-top: 10px;
 }
 
 
