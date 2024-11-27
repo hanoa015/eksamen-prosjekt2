@@ -9,12 +9,15 @@
 </head>
 <body>
     <header>
-        <form action="#" method="get" aria-label="Søk">
-            <input type="search" name="search" id="search" placeholder="Søk her">
-            <button type="submit" aria-label="Søk">
-                <i class="fa fa-search"></i>
-            </button>
-        </form>
+        <section id="search-bar">
+            <form action="#" method="get" aria-label="Søk">
+                <input type="search" name="search" id="search" placeholder="Søk her">
+                <button type="submit" aria-label="Søk">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+        </section>
+        <section id="main-navigasjon">
             <nav>
                 <ul class="nav-list">
                     <li><a href="index.html">Hjem</a></li>
@@ -22,11 +25,16 @@
                     <li class="logo"><a href="index.html"><h1>Logo</h1></a></li>
                     <li><a href="#populære-kategorier">Kategorier</a></li>
                     <li><a href="#footer-kontakt">Kontakt oss</a></li>
-                    <li> <a href="#"><i class="fa-regular fa-user"></i></a></li>
-                    <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                    <li><a href="checkout.html"><i class="fas fa-shopping-cart"></i></a></li>
                 </ul>
-            </nav>            
+            </nav>
+        </section>
+        <section id="ikon-navigasjon">
+            <ul class="icon-list">
+                <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                <li><a href="checkout.html"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </section>
     </header>
 
     <main class="checkout-page">
@@ -231,31 +239,37 @@
             </form>
         </section>        
 
-    <footer id="footer-kontakt">
-        <section>
-            <h2>Logo</h2>
-            <p>Mauris sit amet urna efficitur, pellentesque nulla vitae, ultrices dui.</p>
-        </section>
-        <section>
-            <h3>KONTAKT</h3>
-            <p><i class="fa-solid fa-location-dot"></i> <span class="bold-text">Adresse:</span> B R A Veien 4, 1757 Halden</p>
-            <p><i class="fa-solid fa-phone"></i> <span class="bold-text">Telefon:</span> 69 60 80 00</p>
-            <p><i class="fa-solid fa-envelope"></i> <span class="bold-text">E-post:</span> halden@hiof.no</p>
-            <p><i class="fa-solid fa-clock"></i> <span class="bold-text">Åpningstider:</span> Stenger 15:00</p>
-        </section>
-        <section>
-            <h3>SNARVEIER</h3>
-            <p><a href="#populære-produkter">Produkter</a></p>
-            <p><a href="#populære-kategorier">Kategorier</a></p>
-            <p><a href="#footer-kontakt">Kontakt oss</a></p>
-        </section>
-        <section>
-            <h3>SOSIALE MEDIER</h3>
-                <p><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></p>
-                <p><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></p>
-                <p><a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a></p>
-                <p><a href="https://www.pinterest.com" target="_blank"><i class="fa-brands fa-pinterest"></i></a></p>
-        </section>        
-    </footer>    
+        <footer>
+            <footer id="footer-kontakt">
+            <section class="footer-logo">
+                <h2>Logo</h2>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+            </section>
+        
+            <div class="footer-grid">
+                <section class="footer-kontakt">
+                    <h3>KONTAKT</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> <span class="bold-text">Adresse:</span> B R A Veien 4, 1757 Halden</p>
+                    <p><i class="fa-solid fa-phone"></i> <span class="bold-text">Telefon:</span> 69 60 80 00</p>
+                    <p><i class="fa-solid fa-envelope"></i> <span class="bold-text">E-post:</span> halden@hiof.no</p>
+                    <p><i class="fa-solid fa-clock"></i> <span class="bold-text">Åpningstider:</span> Stenger 15:00</p>
+                </section>
+        
+                <section class="footer-snarveier">
+                    <h3>SNARVEIER</h3>
+                    <p><a href="#populære-produkter">Produkter</a></p>
+                    <p><a href="#populære-kategorier">Kategorier</a></p>
+                    <p><a href="#footer-kontakt">Kontakt oss</a></p>
+                </section>
+        
+                <section class="footer-sosialemedier">
+                    <h3>SOSIALE MEDIER</h3>
+                    <p><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></p>
+                    <p><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></p>
+                    <p><a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a></p>
+                    <p><a href="https://www.pinterest.com" target="_blank"><i class="fa-brands fa-pinterest"></i></a></p>
+                </section>
+            </div>
+        </footer>
 </body>
 </html>
