@@ -18,8 +18,7 @@ box-sizing: border-box;
 form {
 display: flex;
 align-items: center;
-gap: 10px;
-margin-bottom: 20px;
+
 }
 
 form input[type="search"] {
@@ -41,6 +40,7 @@ align-items: center;
 justify-content: center;
 cursor: pointer;
 color: black;
+margin: 10px;
 
 }
 
@@ -87,17 +87,16 @@ align-items: center;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    margin: ;
+    margin: 10px;
 }
 
 .icon-list {
     display: flex;
     gap: 20px;
     list-style: none;
-    padding: 0;
-    margin: 0;
+    margin: 10px;
     list-style: none; 
-text-decoration: none;
+    text-decoration: none;
 }
 
 .icon-list li {
@@ -229,9 +228,7 @@ text-decoration: none;
         align-items: center;
         gap: 15px;
         list-style: none;
-        padding: 0;
-        margin: 0;
-        
+        margin: 10px;
     }
 }
 
@@ -260,6 +257,8 @@ height: 100%;
 object-fit: cover;
 }
 
+
+
 .banner-content {
 position: absolute;
 top: 50%;
@@ -269,7 +268,6 @@ color: white;
 text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 z-index: 2;
 text-align: right;
-max-width: 40%; 
 line-height: 1.5; 
 }
 
@@ -292,9 +290,10 @@ text-decoration: none;
 border-radius: 4px;
 font-size: 1em;
 margin-top: 20px;
+margin-bottom: 25px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 1200px) {
 .banner-content {
     right: 5%; 
     max-width: 80%; 
@@ -352,57 +351,65 @@ text-align: left;
 margin: 10px; 
 padding: none; 
 box-sizing: border-box; 
-text-align: center;
 }
 
 #populære-produkter h4 {
-font-size: 27px;
+font-size: 30px;
 font-weight: bold;
 margin-bottom: 10px;
 font-weight: 800;
+text-align: center;
 }
 
-#populære-produkter p {
-font-size: 16px;
-margin-bottom: 20px;
+#populære-produkter > p {
+    text-align: center;
+    font-size: 16px; 
+    margin-top: 10px;
+    color: #000000; 
 }
+
+.produkt-seksjon p {
+    text-align: left; 
+    font-size: 14px;
+    margin: 5px 0;
+}
+
 
 .filter-buttons {
-display: flex;
-flex-wrap: wrap; 
-justify-content: space-between; 
-gap: 10px; 
-margin-bottom: 20px; 
-padding: 0;
-border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
 }
 
 .filter-buttons button {
-flex: 1; 
-padding: 15px; 
-font-size: 16px; 
-border: 1px solid #000000; 
-background-color: transparent; 
-color: #000000; 
-border-radius: 25px; 
-cursor: pointer; 
-text-align: center; 
-transition: all 0.3s ease; 
+    flex: 1 1 auto;  
+    padding: 2vw; 
+    font-size: 1.2vw; 
+    border: 1px solid #000000;
+    background-color: transparent;
+    color: #000000;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
 }
 
-.filter-buttons button:hover {
-background-color: #80818b; 
-color: #ffffff; 
-border-color: #000000; 
-}
 
 .produkt-seksjon {
-padding: 0; 
-margin: 0;
-display: flex;
-flex-direction: column; 
-gap: 20px;
-box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 10px;
+
 }
 
 .produkt-seksjon article a{
@@ -453,6 +460,7 @@ width: calc(100% - 20px);
 height: auto; 
 margin: 10px; 
 border-radius: 25px; 
+
 }
 
 article i.fa-regular.fa-heart {
@@ -478,27 +486,89 @@ margin-left: auto;
 text-align: right;
 }
 
-.produkt-seksjon article button {
-margin: 10px;
-padding: 5px 15px; 
-width: auto;
-background-color: #fff; 
-color: #000; 
-border: 2px solid #000000;
-border-radius: 5px; /
-text-align: center; 
-cursor: pointer;
-font-size: 14px;
-}
-
-
 .produkt-seksjon article button:hover { /*SKAL FJERNES FOR MOBIL!*/
-background-color: #f1f1f1; 
+background-color: #777171 
 }
 
 .se-flere-lenke {
     color: rgb(41, 41, 201); 
 }
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    .produkt-seksjoner {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .produkt-seksjon {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .produkt-seksjon img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .produkt-seksjon h3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .produkt-seksjon h3 span {
+        margin-left: auto;
+        text-align: right;
+        font-weight: bold;
+    }
+
+    .produkt-seksjon p {
+        margin: 10px 0;
+    }
+
+    .produkt-seksjon button {
+        margin: 10px 0;
+        padding: 10px 20px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    .produkt-seksjon button:hover {
+        background-color: #333;
+    }
+
+
+    .produkt-seksjon article button:hover { /*SKAL FJERNES FOR MOBIL!*/
+    background-color: #f1f1f1;
+    }
+    
+    .se-flere-lenke {
+        color: rgb(41, 41, 201); 
+    }
+}
+
+
 /* SEKSJON 3: POPULÆRE KATEGORIER */
 #populære-kategorier {
 text-align: center; 
@@ -513,17 +583,27 @@ border-radius: 0;
 filter:blur(2.5px)
 }
 
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    #populære-kategorier img {
+        filter:blur(5px)
+    }
+}
+
 #populære-kategorier h4 {
 font-size: 30px;
 font-weight: bold;
 margin-bottom: 10px;
+text-align: center;
 }
 
 #populære-kategorier p {
 font-size: 16px;
 margin-bottom: 20px;
 color: #000000;
+text-align: center;
 }
+
 
 .category-card {
 position: relative; 
@@ -575,6 +655,7 @@ border-radius: 5px;
     font-size: 40px;
 }
 }
+
 
 #anmeldelser {
 background-color: #f9f9f9; 
@@ -883,11 +964,15 @@ text-align: center;
 scroll-snap-align: start; 
 }
 
-.produkt-kort img {
-width: 100%; 
-height: auto; 
-border-radius: 10px; 
+.produkt-seksjon img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+    object-fit: cover; 
 }
+
 
 .produkt-kort h3 {
 display: flex; 
@@ -949,6 +1034,15 @@ section a {
 text-decoration: none; 
 color: #000; 
 }
+
+.produkt-seksjon h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+
 section a:hover{ /*SKAL FJERNES FOR MOBIL!*/
 color: #4744e0;
 text-decoration: underline;
@@ -1053,6 +1147,9 @@ details {
 
 
 /*--------------------CHECKOUT SIDEN-------------------------------*/
+.checkout-page i {
+    margin-left: 8px;
+}
 
 .checkout-page {
 font-family: Arial, sans-serif;
