@@ -432,6 +432,9 @@ font-size: 14px;
 background-color: #f1f1f1; 
 }
 
+.se-flere-lenke {
+    color: rgb(41, 41, 201); 
+}
 /* SEKSJON 3: POPULÆRE KATEGORIER */
 #populære-kategorier {
 text-align: center; 
@@ -723,21 +726,23 @@ margin: 5px 0;
 }
 
 #produkt-informasjon button {
-width: auto; 
-margin-top: 10px; 
-cursor: pointer; 
+    width: auto;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 15px;
 }
 
 #produkt-informasjon p a[role="button"] {
-display: inline-block; 
-padding: 10px 20px; 
-background-color: #000; 
-color: #fff;
-text-decoration: none; 
-font-weight: bold; 
-text-align: center; 
-border-radius: 5px;
-transition: background-color 0.3s ease; 
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: #000; 
+    color: #fff;
+    text-decoration: none; 
+    font-weight: bold; 
+    text-align: center; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+    width: 70%;
 }
 
 #produkt-informasjon p a[role="button"]:hover {
@@ -751,9 +756,9 @@ margin-bottom: 20px;
 width: 100%; 
 box-sizing: border-box; 
 cursor: pointer; 
-border: 1px solid #ccc;
+border: 1px solid #000000;
 border-radius: 5px; 
-background-color: #fff; 
+background-color: ##e3dbdb; 
 }
 
 details table {
@@ -796,9 +801,7 @@ margin: 10px;
 margin: 10px; 
 }
 
-#produkt-h2 {
-margin: 10px;
-}
+
 
 .produkt-kort {
 display: flex; 
