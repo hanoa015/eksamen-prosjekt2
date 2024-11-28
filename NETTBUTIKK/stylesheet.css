@@ -571,54 +571,126 @@ background-color: #777171
 
 /* SEKSJON 3: POPULÆRE KATEGORIER */
 #populære-kategorier {
-text-align: center; 
-padding: 10px;
-box-sizing: border-box;
-}
-
-#populære-kategorier img {
-display: block; 
-height: auto;
-border-radius: 0; 
-filter:blur(2.5px)
-}
-
-
-@media (min-width: 600px) and (max-width: 1200px) {
-    #populære-kategorier img {
-        filter:blur(5px)
-    }
+    display: grid;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    max-width: 1200px;
+    box-sizing: border-box;
 }
 
 #populære-kategorier h4 {
-font-size: 30px;
-font-weight: bold;
-margin-bottom: 10px;
-text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 #populære-kategorier p {
-font-size: 16px;
-margin-bottom: 20px;
-color: #000000;
-text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #000000;
+    text-align: center;
 }
 
-
 .category-card {
-position: relative; 
-width: 100%; 
-margin: 10px auto; 
-overflow: hidden; 
-border-radius: 20px; 
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 .category-card img {
-width: 100%;
-height: auto; 
-display: block;
-z-index: 1; 
-position: relative; 
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    filter: blur(2.5px);
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    #populære-kategorier {
+        display: grid;
+        grid-template-columns: 386px 386px 1fr; /* To faste kolonner og én fleksibel */
+        grid-template-areas:
+            "cat1 cat2 cat3"
+            "cat4 cat4 cat5";
+        gap: 20px;
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 1200px;
+        box-sizing: border-box;
+    }
+
+    .category-card:nth-child(1) {
+        grid-area: cat1;
+        width: 100%;
+        max-width: 386px; /* Maks bredde for kategori 1 */
+        justify-self: center;
+    }
+
+    .category-card:nth-child(2) {
+        grid-area: cat2;
+        width: 100%;
+        max-width: 386px; 
+        justify-self: center;
+    }
+
+    .category-card:nth-child(3) {
+        grid-area: cat3;
+        width: 100%;
+        max-width: unset; 
+        justify-self: stretch; 
+    }
+
+    .category-card:nth-child(4) {
+        grid-area: cat4;
+        width: 100%;
+        max-width: 864px; 
+        justify-self: center;
+    }
+
+    .category-card:nth-child(5) {
+        grid-area: cat5;
+        width: 100%;
+        max-width: 300px; 
+        justify-self: start; 
+    }
+
+    .category-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        border-radius: 10px;
+    }
+
+    .category-card h5 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 10px 15px;
+        border-radius: 5px;
+        z-index: 2;
+    }
+
+    #populære-kategorier h4 {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    #populære-kategorier p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        color: #000000;
+        text-align: center;
+    }
 }
 
 .category-card::before {
@@ -648,12 +720,6 @@ z-index: 3;
 background-color: rgba(0, 0, 0, 0.5); 
 padding: 5px 10px;
 border-radius: 5px; 
-}
-
-@media (min-width: 992px) {
-.category-card h5 {
-    font-size: 40px;
-}
 }
 
 
@@ -901,8 +967,7 @@ box-sizing: border-box;
 cursor: pointer; 
 border: 1px solid #000000;
 border-radius: 5px; 
-background-color: ##e3dbdb; 
-}
+background-color: ;}
 
 details table {
     width: 100%;
