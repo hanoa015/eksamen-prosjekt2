@@ -887,41 +887,181 @@ font-weight: bold;
 color: #000; 
 }
 
-#produkt-detaljer1 {
-display: flex; 
-flex-wrap: wrap;
-max-width: 1140px; 
-margin: 0 auto;
-padding: 10px;
-gap: 20px; 
+#produkt-detaljer {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 20px;
 }
 
-#produkt-detaljer1 article {
-display: flex; 
-flex-direction: column; 
-width: calc(30% - 20px); 
-margin-right: 20px; 
-align-items: center; 
+/* Bilder-seksjonen */
+.bilder {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 25%;
 }
 
-#produkt-detaljer1 img {
-width: calc(70% - 20px); 
-height: auto; 
-border-radius: 5px;
+.bilder article {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-#produkt-detaljer1 article img {
-width: 100%;
-margin-bottom: 10px; 
-border-radius: 5px; 
+.bilder article img {
+    width: 100%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-#produkt-informasjon {
-flex: 1; 
-max-width: 440px; 
-margin: 10px; 
-line-height: 1.5;
-font-family: Arial, Helvetica, sans-serif;
+.bilder figure img {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Produktinformasjon-seksjonen */
+.produkt-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.produkt-info h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.produkt-info a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.produkt-info a:hover {
+    text-decoration: underline;
+}
+
+.produkt-info p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.produkt-info label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.produkt-info select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.produkt-info a[role="button"] {
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.produkt-info a[role="button"]:hover {
+    background-color: #333;
+}
+
+.produkt-info button {
+    background: none;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.produkt-info button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Detaljer og interaksjoner */
+.detaljer details {
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.detaljer summary {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.detaljer summary:hover {
+    color: #555;
+}
+
+.detaljer table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.detaljer th, .detaljer td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.detaljer th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+.review {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.review span {
+    display: block;
+    margin: 5px 0;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    #produkt-detaljer {
+        flex-direction: column;
+    }
+
+    .bilder {
+        width: 100%;
+    }
+
+    .bilder article img {
+        width: 100px;
+        height: auto;
+    }
+
+    .produkt-info {
+        width: 100%;
+    }
 }
 
 #produkt-informasjon h2, #produkt-informasjon a, #produkt-informasjon p {
@@ -957,7 +1097,6 @@ margin: 5px 0;
 #produkt-informasjon p a[role="button"]:hover {
 background-color: #333; 
 }
-
 
 select#size {
 padding: 10px;
@@ -1060,10 +1199,11 @@ color: #000000;
 font-size: 14px; 
 margin: 5px 0; 
 text-align: left;
+margin-bottom: 30px;
 }
 
 .produkt-kort button {
-background-color: #000; 
+background-color: #353232b2; 
 color: #fff; 
 padding: 10px 15px; 
 border: none; 
@@ -1071,6 +1211,7 @@ border-radius: 5px;
 cursor: pointer; 
 font-size: 14px; 
 margin-top: 10px; 
+margin-right: 90px;
 }
 
 .produkt-kort button:hover {
@@ -1117,6 +1258,7 @@ text-decoration: underline;
     border-bottom: 1px solid #000000;
     padding: 20px 0;
     margin-bottom: 10px;
+
 }
 
 #produkt-detaljer details:last-child {
