@@ -368,9 +368,9 @@ border-radius: 20px;
 
 .filter-buttons button {
 flex: 1; 
-padding: 10px; 
+padding: 15px; 
 font-size: 16px; 
-border: 2px solid #000000; 
+border: 1px solid #000000; 
 background-color: transparent; 
 color: #000000; 
 border-radius: 25px; 
@@ -394,12 +394,6 @@ gap: 20px;
 box-sizing: border-box;
 }
 
-.produkt-seksjon article {
-display: flex;
-flex-direction: column;
-align-items: flex-start; 
-}
-
 .produkt-seksjon article a{
 text-decoration: none;
 color: #000;
@@ -417,6 +411,28 @@ width: 100%;
 margin-left: auto; 
 text-align: right;
 font-weight: normal; 
+margin: 15px;
+}
+
+.produkt-seksjon article {
+    position: relative;
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #fffffff6;
+}
+
+.produkt-seksjon article i.fa-regular.fa-heart {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    background-color: rgb(175 167 167 / 50%);
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 5;
+    cursor: pointer;
 }
 
 
@@ -425,8 +441,21 @@ display: block;
 width: calc(100% - 20px); 
 height: auto; 
 margin: 10px; 
-border-radius: 5px; 
+border-radius: 25px; 
 }
+
+article i.fa-regular.fa-heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #000000;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 
 .produkt-seksjon article p:first-of-type {
 justify-content: space-between; 
@@ -474,7 +503,7 @@ filter:blur(3px)
 }
 
 #populære-kategorier h4 {
-font-size: 24px;
+font-size: 29px;
 font-weight: bold;
 margin-bottom: 10px;
 }
@@ -483,7 +512,7 @@ margin-bottom: 10px;
 #populære-kategorier p {
 font-size: 16px;
 margin-bottom: 20px;
-color: #333;
+color: #000000;
 }
 
 .category-card {
@@ -931,6 +960,7 @@ text-decoration: underline;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    margin: 10px;
 }
 
 #produkt-detaljer summary:hover {
