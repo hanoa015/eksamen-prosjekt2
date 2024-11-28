@@ -71,7 +71,7 @@ transition: color 0.3s ease;
 .nav-list li.logo h1 {
 font-size: 36px;
 font-weight: bold;
-margin: 20px 0;
+margin: 10px;
 text-align: center;
 color: black;
 }
@@ -84,12 +84,36 @@ color: black;
 align-items: center;
 }
 
-.icon-list{
-list-style: none; 
+#ikon-navigasjon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.icon-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    list-style: none; 
 text-decoration: none;
 }
 
-@media (min-width: 750px) and (max-width: 1200px) {
+.icon-list li {
+    display: inline-block;
+}
+
+.icon-list a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+
+@media (min-width: 600px) and (max-width: 1200px) {
 header {
     display: flex;
     flex-direction: row; 
