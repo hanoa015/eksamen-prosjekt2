@@ -491,7 +491,7 @@ background-color: #f1f1f1;
 /* SEKSJON 3: POPULÆRE KATEGORIER */
 #populære-kategorier {
 text-align: center; 
-padding: 20px;
+padding: 10px;
 box-sizing: border-box;
 }
 
@@ -499,15 +499,14 @@ box-sizing: border-box;
 display: block; 
 height: auto;
 border-radius: 0; 
-filter:blur(3px)
+filter:blur(2.5px)
 }
 
 #populære-kategorier h4 {
-font-size: 29px;
+font-size: 30px;
 font-weight: bold;
 margin-bottom: 10px;
 }
-
 
 #populære-kategorier p {
 font-size: 16px;
@@ -520,7 +519,7 @@ position: relative;
 width: 100%; 
 margin: 10px auto; 
 overflow: hidden; 
-border-radius: 35px; 
+border-radius: 20px; 
 }
 
 .category-card img {
@@ -584,9 +583,10 @@ scroll-snap-type: x mandatory;
 
 #anmeldelser h4 {
 font-size: 30px; 
-font-weight: 800; 
+font-weight: bold; 
 text-align: left; 
 margin-bottom: 20px; 
+margin: 10px;
 }
 
 .anmeldelse {
