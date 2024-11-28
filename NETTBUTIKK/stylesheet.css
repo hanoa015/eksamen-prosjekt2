@@ -514,8 +514,6 @@ border-radius: 5px;
 }
 
 #anmeldelser {
-padding: 20px; 
-margin: 20px auto; 
 background-color: #f9f9f9; 
 border-radius: 15px; 
 box-sizing: border-box; 
@@ -762,9 +760,12 @@ background-color: ##e3dbdb;
 }
 
 details table {
-width: 100%;
-border-collapse: collapse; 
-table-layout: fixed; 
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    table-layout: fixed;
+    word-wrap: break-word;
+    overflow-x: auto;
 }
 
 details thead th {
@@ -796,11 +797,6 @@ width: 10%;
 #lignende-produkter {
 margin: 10px; 
 }
-
-#produkt-detaljer {
-margin: 10px; 
-}
-
 
 
 .produkt-kort {
@@ -893,6 +889,102 @@ section a:hover{ /*SKAL FJERNES FOR MOBIL!*/
 color: #4744e0;
 text-decoration: underline;
 }
+
+#produkt-detaljer details {
+    border-bottom: 1px solid #000000;
+    padding: 20px 0;
+    margin-bottom: 10px;
+}
+
+#produkt-detaljer details:last-child {
+    border-bottom: none;
+}
+
+#produkt-detaljer summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#produkt-detaljer summary:hover {
+    color: #000;
+}
+
+#produkt-detaljer summary .toggle-sign {
+    font-size: 18px;
+    color: #000000;
+}
+
+details[open] summary .toggle-sign::before {
+    content: "-";
+}
+
+details:not([open]) summary .toggle-sign::before {
+    content: "+";
+}
+
+#anmeldelser details {
+    border-bottom: 1px solid #000000;
+    padding: 10px 0;
+}
+
+#anmeldelser summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 0;
+    padding-bottom: 5px; 
+}
+
+#anmeldelser summary i {
+    margin-right: 5px;
+    color: #000000;
+}
+
+#anmeldelser p {
+    margin: 10px 0;
+}
+
+details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+details table th, details table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+details table th {
+    background-color: #b8b3b3;
+    font-weight: bold;
+}
+
+details {
+    overflow-x: auto;
+}
+
+.review p i {
+    margin-right: 2px;
+    color: #000000;
+}
+
+.review {
+    margin-bottom: 10px;
+}
+
+
+
+
 
 
 /*--------------------CHECKOUT SIDEN-------------------------------*/
