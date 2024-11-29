@@ -13,7 +13,7 @@
             <input type="search" name="search" id="search" placeholder="Søk her">
             <i class="fa fa-search"></i>
         </form>
-        
+
         <section id="main-navigasjon">
             <nav>
                 <ul class="nav-list">
@@ -34,35 +34,42 @@
         </section>
     </header>
 
-    <main class="checkout-page">
-        <a href="index.html"><i class="fa-solid fa-arrow-left"></i> Fortsett å handle</a>
-        <h1>Kasse</h1>
+    <main>
+        <section class="checkout-page">
+            <a href="index.html"><i class="fa-solid fa-arrow-left"></i> Fortsett å handle</a>
+            <h1>Kasse</h1>
+        </section>
+            <section id="shopping-bag">
+                <h2>1. SHOPPINGBAGEN DIN</h2>
+                <article class="product-item">
+                    <img src="https://fastly.picsum.photos/id/119/3264/2176.jpg?hmac=PYRYBOGQhlUm6wS94EkpN8dTIC7-2GniC3pqOt6CpNU" alt="Produktbilde" width="300" height="200">
+                </article>
+            </section>
+                    <section class="product-info">
+                        <p><b>PRODUCT NAME</b></p>
+                        <p>Kr 1999</p>
+                        <p>Farge: grå</p>
+                        <p>
+                            <label for="size1"><b>Størrelse</b></label>
+                            <select id="size1" name="size1">
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="quantity1">Antall</label>
+                            <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                        </p>
+                    </section>
+                    <section class="actions">
+                        <button><i class="fa-regular fa-heart"></i></button>
+                        <button><i class="fa-solid fa-trash"></i></button>
+                    </section>
+            
         <section>
-            <h2>1. SHOPPINGBAGEN DIN</h2>
-            <article>
-                <img src="https://fastly.picsum.photos/id/119/3264/2176.jpg?hmac=PYRYBOGQhlUm6wS94EkpN8dTIC7-2GniC3pqOt6CpNU" alt="Produktbilde" width="300" height="200">
-                <p><b>PRODUCT NAME</b></p>
-                <p>Kr 1999</p>
-                <p>Farge: grå</p>
-                <p>
-                    <label for="size1"><b>Størrelse</b></label>
-                    <select id="size1" name="size1">
-                        <option value="XS">XS</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
-                    </select>
-                </p>
-                <p>
-                    <label for="quantity1">Antall</label>
-                    <input type="number" id="quantity1" name="quantity1" min="1" value="1">
-                </p>
-                <p>
-                    <button><i class="fa-regular fa-heart"></i></button>
-                    <button><i class="fa-solid fa-trash"></i></button>
-                </p>
-            </article>
             <article>
                 <img src="https://fastly.picsum.photos/id/119/3264/2176.jpg?hmac=PYRYBOGQhlUm6wS94EkpN8dTIC7-2GniC3pqOt6CpNU" alt="produktbildet2" width="300" height="200">
                 <p><b>PRODUCT NAME</b></p>
@@ -87,6 +94,9 @@
                     <button><i class="fa-solid fa-trash"></i></button>
                 </p>
             </article>
+        </section>
+
+        <section>
             <article>
                 <img src="https://fastly.picsum.photos/id/119/3264/2176.jpg?hmac=PYRYBOGQhlUm6wS94EkpN8dTIC7-2GniC3pqOt6CpNU" alt="produktbildet2" width="300" height="200">
                 <p><b>PRODUCT NAME</b></p>
@@ -112,7 +122,6 @@
                 </p>
             </article>
         </section>
-    </main>
             
         <section id="dine-opplysninger">
             <h2>2. DINE OPPLYSNINGER</h2>
@@ -157,7 +166,6 @@
              
         <section id="levering-section">
             <h2>3. LEVERING</h2>
-        
             <article class="delivery-option">
                 <input type="radio" id="express-home" name="delivery" value="express-home" required>
                 <label for="express-home">
@@ -173,6 +181,7 @@
                     <small>*For levering til postnummer 4000-7999 er leveringstiden 2 arbeidsdager, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager.</small>
                 </p>
             </article>
+        </section>
         
             <article class="delivery-option">
                 <input type="radio" id="express-pickup" name="delivery" value="express-pickup" required>
@@ -199,9 +208,7 @@
                 <p class="details">
                     Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager.
                 </p>
-            </article>
-        </section>
-        
+            </article>        
         
         <section id="betaling">
             <h2>4. BETALING</h2>
@@ -236,9 +243,9 @@
                 </label>
             </form>
         </section>            
+    </main>
 
-        <footer>
-            <footer id="footer-kontakt">
+        <footer id="footer-kontakt">
             <section class="footer-logo">
                 <h2>Logo</h2>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
@@ -268,6 +275,6 @@
                     <p><a href="https://www.pinterest.com" target="_blank"><i class="fa-brands fa-pinterest"></i></a></p>
                 </section>
             </div>
-        </footer>
+     </footer>
 </body>
 </html>
