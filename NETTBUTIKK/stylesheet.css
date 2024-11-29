@@ -1749,82 +1749,82 @@ margin-top: 80px;
 }
 
 
+
 #betaling {
-width: 100%;
-display: flex;
-flex-direction: column;
-align-items: left;
-text-align: left;
-box-sizing: border-box;
-margin: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 30px auto;
 }
 
 #betaling h2 {
-font-size: 1.5em;
-margin-bottom: 20px;
-}
-
-#betaling form {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-width: 100%;
-}
-
-#betaling form label {
-font-weight: bold;
-gap: 10px; 
-margin-bottom: 8px; 
-width: 100%; 
-}
-
-#betaling form input[type="text"],
-#betaling form input[type="date"],
-#betaling form input[type="number"] {
-width: 100%;
-padding: 15px;
-margin-bottom: 8px; 
-border: 1px solid #ccc;
-}
-
-#betaling form input[type="checkbox"] {
-width: auto; 
-margin: 0; 
-}
-
-#betaling form p {
-margin: 5px 0; 
-font-size: 0.9em;
-color: #000000;
-text-align: center;
-}
-
-#betaling form h2 {
-font-size: 1.5em;
-text-align: center;
-margin: 10px 0;
-}
-
-#betaling button {
-width: 100%;
-padding: 20px;
-background-color: #333;
-color: white;
-border: none;
-border-radius: 4px;
-cursor: pointer;
-font-size: 1em;
-margin-top: 10px;
-}
-
-#betaling form button:hover {
-background-color: #555
-}
-
-#betaling .checkbox-label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
     text-align: center;
-    font-weight: normal;
+}
+
+#betaling p {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+input[type="text"], input[type="date"] {
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.pay-button {
+    font-size: 16px;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.pay-button:hover {
+    background-color: #555;
+}
+
+.terms {
+    font-size: 12px;
+    color: #000000;
+    margin: 10px 0;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.checkbox-label {
+    display: block;
+    font-size: 14px;
     margin-top: 10px;
+    color: #000000;
+    text-align: center;
+}
+
+.checkbox-label input {
+    margin-right: 10px;
 }
 
 
