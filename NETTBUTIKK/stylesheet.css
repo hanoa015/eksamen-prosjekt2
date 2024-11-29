@@ -284,6 +284,7 @@ margin-bottom: 25px;
 }
 
 @media (min-width: 600px) and (max-width: 1200px) {
+
     #banner {
         position: relative;
         width: 100%;
@@ -291,6 +292,41 @@ margin-bottom: 25px;
         overflow: hidden;
         background-color: #f4f4f4;
     }
+    .arrows {
+        display: none;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        transform: translateY(-50%);
+        justify-content: space-between;
+        pointer-events: none;
+        display: flex;
+    }
+    .arrows i {
+        font-size: 24px;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 50%;
+        pointer-events: auto;
+        cursor: pointer;
+        transform: translateY(-50%);
+        z-index: 3;
+        background: #ffffff82;
+        color: black;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .left-arrow {
+        position: absolute;
+        left: 20px;
+    }
+    
+    .right-arrow {
+        position: absolute;
+        right: 20px;
+    }    
 
     .carousel {
         display: flex;
@@ -1333,7 +1369,7 @@ details {
 
 section a {
     text-decoration: none; 
-    color:rgb(52 52 173);
+    color:rgb(0, 0, 0);
     font-size: 20px;
 }
 
