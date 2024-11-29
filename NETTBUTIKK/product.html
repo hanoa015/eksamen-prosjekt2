@@ -9,14 +9,11 @@
 </head>
 <body>
     <header>
-        <section id="search-bar">
-            <form action="#" method="get" aria-label="Søk">
-                <input type="search" name="search" id="search" placeholder="Søk her">
-                <button type="submit" aria-label="Søk">
-                    <i class="fa fa-search"></i>
-                </button>
-            </form>
-        </section>
+        <form id="search-bar" action="#" method="get" aria-label="Søk">
+            <input type="search" name="search" id="search" placeholder="Søk her">
+            <i class="fa fa-search"></i>
+        </form>
+        
         <section id="main-navigasjon">
             <nav>
                 <ul class="nav-list">
@@ -162,7 +159,9 @@
             <article>
                 <img src="https://picsum.photos/id/65/367/267" alt="produkt 1" width="300" height="200">
                 <h3>
-                    <span class="produkt-navn">Product name</span>
+                    <a href="product.html" class="produkt-lenke">
+                        <span class="produkt-navn">Product name</span>
+                    </a>                    
                     <span class="produkt-pris">Kr 1999</span>
                 </h3>
                 <p>
