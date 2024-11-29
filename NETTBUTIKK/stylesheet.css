@@ -1339,11 +1339,13 @@ section a {
 
 #shopping-bag {
     max-width: 800px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 30px auto;
     padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border: 1px solid #ccc; 
     border-radius: 8px;
+    box-sizing: border-box;
 }
 
 #shopping-bag h2 {
@@ -1444,6 +1446,96 @@ section.product-info {
 }
 
 
+
+#opplysninger-section {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 30px auto;
+}
+
+#opplysninger-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+fieldset h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.save-button {
+    font-size: 14px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.save-button:hover {
+    background-color: #555;
+}
+
+.cancel-button {
+    font-size: 14px;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cancel-button:hover {
+    text-decoration: underline;
+}
 
 
 @media (max-width: 600px) {
