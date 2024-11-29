@@ -15,33 +15,33 @@ padding: 10px 20px;
 box-sizing: border-box;
 }
 
-form {
-display: flex;
-align-items: center;
-
+#search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex: 1; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px;
 }
 
-form input[type="search"] {
-padding: 10px;
-border: 1px solid #000;
-border-radius: 20px;
-font-size: 16px;
-width: 250px;
-box-sizing: border-box;
+#search-bar input[type="search"] {
+    padding-right: 40px; 
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    font-size: 16px;
+    box-sizing: border-box;
 }
 
-form button {
-padding: 10px;
-border: 1px solid #000;
-background-color: #fffefe;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-cursor: pointer;
-color: black;
-margin: 10px;
-
+#search-bar .fa-search {
+    position: absolute;
+    right: 15px; 
+    color: #000000;
+    font-size: 16px;
+    pointer-events: none; 
 }
 
 .nav-list {
@@ -108,15 +108,6 @@ align-items: center;
     color: #000;
     font-size: 20px;
     transition: color 0.3s ease;
-}
-
-#search-bar {
-    flex: 1; 
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 10px;
-    
 }
 
 #search-bar form{
@@ -234,6 +225,7 @@ align-items: center;
     }
 }
 
+/*BANNEREN*/
 
 #banner {
 position: relative;
@@ -258,8 +250,6 @@ width: 100%;
 height: 100%;
 object-fit: cover;
 }
-
-
 
 .banner-content {
 position: absolute;
@@ -296,56 +286,73 @@ margin-bottom: 25px;
 }
 
 @media (min-width: 600px) and (max-width: 1200px) {
-.banner-content {
-    right: 5%; 
-    max-width: 80%; 
-    text-align: right; 
-    line-height: 1.3;
+    #banner {
+        position: relative;
+        width: 100%;
+        height: 70vh; /* Juster høyden til ønsket nivå */
+        overflow: hidden;
+        background-color: #f4f4f4;
+    }
+
+    .carousel {
+        display: flex;
+        scroll-snap-type: x mandatory; /* Tving snapping ved horisontal scrolling */
+        overflow-x: auto; /* Tillat horisontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Jevn scrolling for iOS */
+        height: 100%;
+        gap: 10px; /* Legg til avstand mellom bildene hvis ønsket */
+    }
+
+    .carousel .slide {
+        flex: 0 0 100%; /* Hvert bilde tar 100% av bredden */
+        scroll-snap-align: start; /* Snap til starten av hvert bilde */
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Tilpass bildet til containeren */
+        border-radius: 10px; /* Avrundede hjørner, hvis ønsket */
+    }
+
+    .banner-content {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+        color: white;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        z-index: 2;
+        text-align: left;
+        max-width: 50%; /* Begrens bredde for innholdet */
+        line-height: 1.5;
+    }
+
+    .banner-content h4 {
+        font-size: 1.8em; /* Juster tekststørrelse */
+        margin-bottom: 20px;
+    }
+
+    .banner-content p {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    .banner-button {
+        display: inline-block;
+        padding: 15px 25px;
+        background-color: #000000;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 1em;
+        margin-top: 20px;
+        transition: background-color 0.3s ease;
+    }
+
+    .banner-button:hover {
+        background-color: #333333;
+    }
 }
 
-.banner-content h4 {
-    font-size: 1.8em; 
-}
 
-.banner-content p {
-    font-size: 1em; 
-}
-
-.banner-button {
-    font-size: 0.9em; 
-    margin-top: 15px;
-}
-}
-
-@media (min-width: 1200px) {
-.banner-content {
-    max-width: 50%; 
-    right: 10%;
-    line-height: 1.8; 
-}
-
-.banner-content h4 {
-    font-size: 3em; 
-}
-
-.banner-content p {
-    font-size: 1.5em; 
-}
-
-.banner-button {
-    font-size: 1.2em; 
-}
-}
-
-@media (max-width: 1200px) {
-.carousel {
-    overflow-x: hidden 
-}
-
-.carousel .slide:not(:first-child) {
-    display: none; 
-}
-}
 
 /* SEKSJON 2: POPULÆRE PRODUKTER*/
 #populære-produkter {
