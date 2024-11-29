@@ -468,18 +468,6 @@ border-radius: 25px;
 
 }
 
-article i.fa-regular.fa-heart {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    color: #000000;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
 
 .produkt-seksjon article p:first-of-type {
 justify-content: space-between; 
@@ -1227,11 +1215,6 @@ font-weight: bold;
 color: #000;
 }
 
-section a {
-text-decoration: none; 
-color: #000; 
-}
-
 .produkt-seksjon h3 {
     display: flex;
     justify-content: space-between;
@@ -1246,10 +1229,8 @@ text-decoration: underline;
 }
 
 #produkt-detaljer details {
-    border-bottom: 1px solid #000000;
     padding: 20px 0;
     margin-bottom: 10px;
-
 }
 
 #produkt-detaljer details:last-child {
@@ -1341,74 +1322,144 @@ details {
 }
 
 /*--------------------CHECKOUT SIDEN-------------------------------*/
-.checkout-page i {
-    margin-left: 8px;
-}
-
-.checkout-page {
-font-family: Arial, sans-serif;
-background-color: #f9f9f9; 
-border-radius: 8px;
-margin: 10px;
-}
 
 .checkout-page h1 {
-font-size: 2em;
-text-align: center;
-margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
 }
 
-.checkout-page section {
-margin-bottom: 20px;
+section a {
+    text-decoration: none; 
+    color:rgb(52 52 173);
+    font-size: 20px;
 }
 
-.checkout-page section h2 {
-font-size: 1.5em;
-margin-bottom: 20px;
-color: #000000;
-margin: ;
+#shopping-bag {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
-.checkout-page section article img {
-height: auto;
-border-radius: 5px;
+#shopping-bag h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.checkout-page section article p {
-margin: 5px 0;
-font-size: 1em;
-color: #000000;
+.product-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
 }
 
-.checkout-page section article p label {
-font-weight: bold;
-margin-right: 10px;
+.product-item figure {
+    margin: 0;
+    flex: 0 0 120px;
 }
 
-.checkout-page section article select,
-.checkout-page section article input[type="number"] {
-border: 1px solid #ccc;
-border-radius: 5px;
-width: auto;
+.product-item figure img {
+    width: 100%;
+    border-radius: 8px;
 }
 
-.checkout-page section article button {
-background-color: #000000;
-color: #fff;
-border: none;
-padding: 8px 12px;
-border-radius: 5px;
-cursor: pointer;
-margin-right: 10px;
+.product-details {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
-.checkout-page section article button i {
-margin-right: 5px;
+.product-details p {
+    margin: 5px 0;
 }
 
-.checkout-page section article button:hover {
-background-color: #413f3f
+.product-details label {
+    font-weight: bold;
+    margin-right: 10px;
 }
+
+.product-details select,
+.product-details input[type="number"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    width: auto;
+}
+
+.product-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.product-actions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.product-actions button i {
+    font-size: 20px;
+    color: #333;
+}
+
+.product-actions button:hover i {
+    color: #000;
+}
+
+section.product-info {
+
+}
+
+.valg {
+    display: flex;
+    align-items: center;
+    gap: 10px;  
+}
+
+.valg label {
+    margin-right: 5px;  
+}
+
+.valg select,
+.valg input[type="number"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 25px;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .product-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .actions {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 20px; /* Gir avstand mellom ikonene på mindre skjermer */
+        width: 100%;
+    }
+}
+
 
 .product-card {
 border: 1px solid #ddd;

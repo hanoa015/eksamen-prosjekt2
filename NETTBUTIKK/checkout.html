@@ -39,131 +39,149 @@
             <a href="index.html"><i class="fa-solid fa-arrow-left"></i> Fortsett å handle</a>
             <h1>Kasse</h1>
         </section>
-            <section id="shopping-bag">
-                <h2>1. SHOPPINGBAGEN DIN</h2>
-                <article class="product-item">
-                    <img src="https://fastly.picsum.photos/id/119/3264/2176.jpg?hmac=PYRYBOGQhlUm6wS94EkpN8dTIC7-2GniC3pqOt6CpNU" alt="Produktbilde" width="300" height="200">
-                </article>
-            </section>
-                    <section class="product-info">
-                        <p><b>PRODUCT NAME</b></p>
-                        <p>Kr 1999</p>
-                        <p>Farge: grå</p>
-                        <p>
-                            <label for="size1"><b>Størrelse</b></label>
-                            <select id="size1" name="size1">
-                                <option value="XS">XS</option>
-                                <option value="S">S</option>
-                                <option value="M">M</option>
-                                <option value="L">L</option>
-                                <option value="XL">XL</option>
-                            </select>
-                        </p>
-                        <p>
-                            <label for="quantity1">Antall</label>
-                            <input type="number" id="quantity1" name="quantity1" min="1" value="1">
-                        </p>
-                    </section>
-                    <section class="actions">
-                        <button><i class="fa-regular fa-heart"></i></button>
-                        <button><i class="fa-solid fa-trash"></i></button>
-                    </section>
-            
-        <section>
-            <article>
-                <img src="https://fastly.picsum.photos/id/119/3264/2176.jpg?hmac=PYRYBOGQhlUm6wS94EkpN8dTIC7-2GniC3pqOt6CpNU" alt="produktbildet2" width="300" height="200">
-                <p><b>PRODUCT NAME</b></p>
-                <p>Kr 1999</p>
-                <p>Farge: grå</p>
-                <p>
-                    <label for="size2"><b>Størrelse</b></label>
-                    <select id="size2" name="size2">
-                        <option value="XS">XS</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
-                    </select>
-                </p>
-                <p>
-                    <label for="quantity2">Antall</label>
-                    <input type="number" id="quantity2" name="quantity2" min="1" value="1">
-                </p>
-                <p>
-                    <button><i class="fa-regular fa-heart"></i></button>
-                    <button><i class="fa-solid fa-trash"></i></button>
-                </p>
-            </article>
-        </section>
 
-        <section>
-            <article>
-                <img src="https://fastly.picsum.photos/id/119/3264/2176.jpg?hmac=PYRYBOGQhlUm6wS94EkpN8dTIC7-2GniC3pqOt6CpNU" alt="produktbildet2" width="300" height="200">
-                <p><b>PRODUCT NAME</b></p>
-                <p>Kr 1999</p>
-                <p>Farge: grå</p>
-                <p>
-                    <label for="size3"><b>Størrelse</b></label>
-                    <select id="size3" name="size3">
-                        <option value="XS">XS</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
-                    </select>
-                </p>
-                <p>
-                    <label for="quantity3">Antall</label>
-                    <input type="number" id="quantity3" name="quantity3" min="1" value="1">
-                </p>
-                <p>
-                    <button><i class="fa-regular fa-heart"></i></button>
-                    <button><i class="fa-solid fa-trash"></i></button>
-                </p>
-            </article>
+            <section id="shopping-bag">
+    <h2>1. SHOPPINGBAGEN DIN</h2>
+    <article class="product-item">
+        <figure>
+            <img src="https://fastly.picsum.photos/id/119/3264/2176.jpg?hmac=PYRYBOGQhlUm6wS94EkpN8dTIC7-2GniC3pqOt6CpNU" alt="Produktbilde">
+        </figure>
+        <section class="product-info">
+            <p><b>PRODUCT NAME</b></p>
+            <p>Kr 1999</p>
+            <p>Farge: grå</p>
+            <p class="valg">
+                <label for="size1"><b>Størrelse</b></label>
+                <select id="size1" name="size1">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                    <label for="quantity1">Antall</label>
+                    <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+            </p>
         </section>
-            
-        <section id="dine-opplysninger">
-            <h2>2. DINE OPPLYSNINGER</h2>
-            <form action="#" method="post">
-                <p>
-                    <label for="fornavn"><b>Leveringsadresse<br>Fornavn</b></label>
-                    <input type="text" id="fornavn" name="fornavn" placeholder="Nora*" required>
-                </p>
-                <p>
-                    <label for="etternavn"><b>Etternavn</b></label>
-                    <input type="text" id="etternavn" name="etternavn" placeholder="Nordman*" required>
-                </p>
-                <p>
-                    <label for="gateadresse"><b>Gateadresse</b></label>
-                    <input type="text" id="gateadresse" name="gateadresse" placeholder="BRA veien 4*" required>
-                </p>
-                <p>
-                    <label for="postnummer"><b>Postnummer</b></label>
-                    <input type="number" id="postnummer" name="postnummer" placeholder="1752*" min="0" required>
-                </p>
-                <p>
-                    <label for="poststed"><b>Poststed</b></label>
-                    <input type="text" id="poststed" name="poststed" placeholder="Halden*" required>
-                </p>
-        
-                <p class="spacer"></p>
-        
-                <p>
-                    <label for="epost"><b>Kontaktinformasjon<br>E-post*</b></label>
-                    <input type="email" id="epost" name="epost" placeholder="Noranordman@hiof.no*" required>
-                </p>
-                <p>
-                    <label for="telefon"><b>Telefon*</b></label>
-                    <input type="tel" id="telefon" name="telefon" placeholder="+4749***018" required>
-                </p>
-               <p>
-                <button type="submit" id="lagre-knapp">Lagre</button>
-                <button type="reset" id="avbryt-knapp">Avbryt</button>
-                </p>
-            </form>
+        <section class="actions">
+            <button><i class="fa-regular fa-heart"></i></button>
+            <button><i class="fa-solid fa-trash"></i></button>
         </section>
-             
+    </article>
+
+    <article class="product-item">
+        <figure>
+            <img src="https://fastly.picsum.photos/id/119/3264/2176.jpg?hmac=PYRYBOGQhlUm6wS94EkpN8dTIC7-2GniC3pqOt6CpNU" alt="Produktbilde">
+        </figure>
+        <section class="product-info">
+            <p><b>PRODUCT NAME</b></p>
+            <p>Kr 1999</p>
+            <p>Farge: blå</p>
+            <p class="valg">
+                <label for="size1"><b>Størrelse</b></label>
+                <select id="size1" name="size1">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                    <label for="quantity1">Antall</label>
+                    <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+            </p>
+        </section>
+        <section class="actions">
+            <button><i class="fa-regular fa-heart"></i></button>
+            <button><i class="fa-solid fa-trash"></i></button>
+        </section>
+    </article>
+
+    <article class="product-item">
+        <figure>
+            <img src="https://fastly.picsum.photos/id/119/3264/2176.jpg?hmac=PYRYBOGQhlUm6wS94EkpN8dTIC7-2GniC3pqOt6CpNU" alt="Produktbilde">
+        </figure>
+        <section class="product-info">
+            <p><b>PRODUCT NAME</b></p>
+            <p>Kr 1999</p>
+            <p>Farge: blå</p>
+            <p class="valg">
+                <label for="size1"><b>Størrelse</b></label>
+                <select id="size1" name="size1">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                    <label for="quantity1">Antall</label>
+                    <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+            </p>
+        </section>
+        <section class="actions">
+            <button><i class="fa-regular fa-heart"></i></button>
+            <button><i class="fa-solid fa-trash"></i></button>
+        </section>
+    </article>
+
+    <article class="product-item">
+        <figure>
+            <img src="https://fastly.picsum.photos/id/119/3264/2176.jpg?hmac=PYRYBOGQhlUm6wS94EkpN8dTIC7-2GniC3pqOt6CpNU" alt="Produktbilde">
+        </figure>
+        <section class="product-info">
+            <p><b>PRODUCT NAME</b></p>
+            <p>Kr 1999</p>
+            <p>Farge: blå</p>
+            <p class="valg">
+                <label for="size1"><b>Størrelse</b></label>
+                <select id="size1" name="size1">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                    <label for="quantity1">Antall</label>
+                    <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+            </p>
+        </section>
+        <section class="actions">
+            <button><i class="fa-regular fa-heart"></i></button>
+            <button><i class="fa-solid fa-trash"></i></button>
+        </section>
+    </article>
+</section>
+
+<section id="opplysninger-section">
+    <h3>2. DINE OPPLYSNINGER</h3>
+    <form id="personopplysninger-skjema">
+        <label for="fornavn">Leveringsadresse Fornavn</label>
+        <input type="text" id="fornavn" name="fornavn" placeholder="Nora*" required>
+        
+        <label for="etternavn">Etternavn</label>
+        <input type="text" id="etternavn" name="etternavn" placeholder="Nordman*" required>
+        
+        <label for="gateadresse">Gateadresse</label>
+        <input type="text" id="gateadresse" name="gateadresse" placeholder="B R A veien 4*" required>
+        
+        <label for="postnummer">Postnummer</label>
+        <input type="number" id="postnummer" name="postnummer" placeholder="1752*" required>
+        
+        <label for="poststed">Poststed</label>
+        <input type="text" id="poststed" name="poststed" placeholder="Halden*" required>
+
+        <label for="Epost">Kontaktinformasjon E-post</label>
+        <input type="text" id="kontaktinformasjon e-post" name="kontaktinformasjon e-post" placeholder="Noranordman@hiof.no..*" required>
+
+        <label for="Telefon">Telefon</label>
+        <input type="number" id="telefon" name="telefon" placeholder="+4749**018" required>
+
+        <fieldset>
+            <button type="submit" class="save-button">Lagre</button>
+            <button type="button" class="cancel-button">Avbryt</button>
+        </fieldset>
+    </form>
+</section>
+
         <section id="levering-section">
             <h2>3. LEVERING</h2>
             <article class="delivery-option">
