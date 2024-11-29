@@ -1494,14 +1494,6 @@ label {
     margin-bottom: 5px;
 }
 
-input {
-    font-size: 14px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    width: 100%;
-}
 
 .buttons {
     display: flex;
@@ -1551,6 +1543,114 @@ input {
         width: 100%;
     }
 }
+#levering-section {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 30px auto;
+}
+
+#levering-section h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.delivery-option {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.delivery-option label {
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.delivery-option small {
+    font-size: 14px;
+    color: #777;
+}
+
+.price-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.price-details .price {
+    color: #000;
+}
+
+.details {
+    font-size: 14px;
+    color: #000000;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+.details small {
+    font-size: 12px;
+    color: #000000;
+}
+
+
+.price-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.price-details .price {
+    color: #000;
+}
+
+.details {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+.details small {
+    font-size: 12px;
+    color: #777;
+}
+
+.delivery-option {
+    padding: 15px 15px 15px 50px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.delivery-option input[type="radio"] {
+    position: absolute;
+    left: 15px;
+    margin: 0;
+    width: 18px;
+    height: 18px;
+}
 
 
 .product-card {
@@ -1564,10 +1664,6 @@ background-color: #f9f9f9;
 display: flex;
 flex-direction: column;
 gap: 10px; 
-}
-
-input[type="radio"] {
-margin-right: 10px;
 }
 
 #dine-opplysninger {
@@ -1652,49 +1748,6 @@ text-decoration: none;
 margin-top: 80px; 
 }
 
-#levering-section {
-margin-top: 20px;
-font-family: Arial, sans-serif;
-color: #000000;
-margin: 10px;
-}
-
-#levering-section h2 {
-font-size: 1.5em;
-margin-bottom: 20px;
-}
-
-.delivery-option {
-margin-bottom: 20px; 
-padding-bottom: 15px; 
-border-bottom: 1px solid #ccc; 
-}
-
-.delivery-option:last-child {
-border-bottom: none; 
-}
-
-.delivery-option label {
-margin-bottom: 5px; 
-font-size: 1rem;
-}
-
-.delivery-option .price {
-font-weight: bold;
-margin-right: 10px;
-}
-
-.delivery-option .details {
-font-size: 0.9rem;
-color: #000000;
-margin-top: 5px;
-line-height: 1.4;
-}
-
-.delivery-option i {
-color: #000000;
-margin-left: 5px;
-}
 
 #betaling {
 width: 100%;
